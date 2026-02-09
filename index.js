@@ -123,33 +123,3 @@ app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 ```
-
-8. Click **"Commit changes"**
-
-## Step 3: Back to Render
-
-1. Go back to the Render tab
-2. In the search box, type your repo name: `whatsapp-bot`
-3. Click on your repository when it appears
-4. Click **"Connect"**
-
-## Step 4: Configure on Render
-
-Render will auto-detect everything, but verify:
-- **Build Command**: `npm install`
-- **Start Command**: `node index.js`
-
-Click **"Create Web Service"**
-
-## Step 5: Wait for Deployment
-
-Render will deploy your bot (takes 1-2 minutes). You'll get a URL like:
-```
-https://whatsapp-bot-xxxx.onrender.com
-```
-
-## Step 6: Update Twilio Webhook
-
-Copy your Render URL and add `/api/twilio/webhook`:
-```
-https://whatsapp-bot-xxxx.onrender.com/api/twilio/webhook
